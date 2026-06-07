@@ -7,6 +7,8 @@ import Fromework from './pages/Fromework'
 import Tips from './pages/Tips';
 import { HelmetProvider } from 'react-helmet-async';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
 
 const router = createBrowserRouter([
   {
@@ -38,3 +40,5 @@ root.render(
   </HelmetProvider>
   </React.StrictMode>
 );
+
+serviceWorkerRegistration.register();
